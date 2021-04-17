@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/tornado/language.xsd" languagecode="en" languagename="English" countrycode="gb">
+
+    <category name="wcf.user.option">
+        <item name="wcf.user.option.registrationReferrer"><![CDATA[Referrer or first page visited]]></item>
+        <item name="wcf.user.option.registrationReferrer.description"><![CDATA[<b>This information cannot be trusted!</b><br />This field is filled in automatically if information about the referrer URL is available during registration.]]></item>
+    </category>
+
+</language>

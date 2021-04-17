@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/package.xsd" name="dev.dmedia.RegistrationReferrer">
+	<packageinformation>
+        <packagename><![CDATA[Registration Referrer]]></packagename>
+        <packagedescription><![CDATA[If available, the HTTP referrer will be saved upon registration.]]></packagedescription>
+		<packagename language="de"><![CDATA[Registrierungs Referrer]]></packagename>
+        <packagedescription language="de"><![CDATA[Falls vorhanden, wird der Referrer bei der Registrierung gespeichert.]]></packagedescription>	
+		<version>1.0.0</version>
+		<date>2020-04-16</date>
+	</packageinformation>
+	
+	<authorinformation>
+		<author><![CDATA[DMedia]]></author>
+		<authorurl><![CDATA[https://www.woltlab.com/user/1468377]]></authorurl>
+	</authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="5.2.0">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+	
+	<excludedpackages>
+		<excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+	
+	<instructions type="install">
+		<instruction type="language" />
+		<instruction type="userOption" />
+		<instruction type="eventListener" />
+		<instruction type="file" />
+	</instructions>
+</package>
