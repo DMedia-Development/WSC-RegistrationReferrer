@@ -5,12 +5,12 @@
 
             <option name="registrationReferrer">
                 <categoryname>profile.personal</categoryname>
-                <optiontype>URL</optiontype>
+                <optiontype>text</optiontype>
                 <editable>2</editable>
                 <visible>2</visible>
                 <searchable>0</searchable>
                 <defaultvalue>Unknown</defaultvalue>
-                <outputclass>wcf\system\option\user\URLUserOptionOutput</outputclass>
+                <outputclass>wcf\system\option\user\RegistrationReferrerUserOptionOutput</outputclass>
             </option>
 
         </options>
