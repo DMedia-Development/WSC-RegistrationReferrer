@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
+    
     <import>
         <eventlistener name="registrationReferrerRegisterFormEventListener">
             <eventclassname>wcf\form\RegisterForm</eventclassname>
@@ -7,9 +8,7 @@
             <listenerclassname>wcf\system\event\listener\RegistrationReferrerRegisterFormEventListener</listenerclassname>
             <environment>user</environment>
         </eventlistener>
-    </import>
 
-    <import>
         <eventlistener name="registrationReferrerTemplateEngineEventListener">
             <eventclassname>wcf\system\template\TemplateEngine</eventclassname>
             <eventname>beforeDisplay</eventname>
@@ -18,4 +17,5 @@
             <inherit>1</inherit>
         </eventlistener>
     </import>
+
 </data>

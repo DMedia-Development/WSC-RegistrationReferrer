@@ -6,8 +6,20 @@ use wcf\data\user\option\UserOption;
 use wcf\data\user\User;
 use wcf\util\StringUtil;
 
-class RegistrationReferrerUserOptionOutput implements IUserOptionOutput {
+/**
+ * User option output implementation for the output of the registration referrer.
+ *
+ * @author Moritz Dahlke (DMedia)
+ * @copyright 2021 DMedia
+ * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @package WoltLabSuite\Core\System\Option\User
+ */
+class RegistrationReferrerUserOptionOutput implements IUserOptionOutput
+{
 
+    /**
+     * @inheritDoc
+     */
     public function getOutput(User $user, UserOption $option, $value)
     {
         $output = "";
@@ -34,4 +46,5 @@ class RegistrationReferrerUserOptionOutput implements IUserOptionOutput {
 
         return $url;
     }
+
 }

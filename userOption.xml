@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/tornado/userOption.xsd">
     <import>
-        <options>
 
+        <options>
             <option name="registrationReferrer">
                 <categoryname>profile.personal</categoryname>
                 <optiontype>text</optiontype>
                 <editable>2</editable>
                 <visible>2</visible>
                 <searchable>0</searchable>
-                <defaultvalue>Unknown</defaultvalue>
+                <defaultvalue>/</defaultvalue>
                 <outputclass>wcf\system\option\user\RegistrationReferrerUserOptionOutput</outputclass>
             </option>
-
         </options>
+
     </import>
 </data>

@@ -5,8 +5,8 @@
         <packagedescription><![CDATA[If available, the HTTP referrer will be saved upon registration.]]></packagedescription>
 		<packagename language="de"><![CDATA[Registrierungs Referrer]]></packagename>
         <packagedescription language="de"><![CDATA[Falls vorhanden, wird der Referrer bei der Registrierung gespeichert.]]></packagedescription>	
-		<version>1.0.1</version>
-		<date>2020-04-16</date>
+		<version>1.0.2</version>
+		<date>2020-05-11</date>
 	</packageinformation>
 	
 	<authorinformation>
@@ -32,5 +32,11 @@
 	<instructions type="update" fromversion="1.0.0">
 		<instruction type="userOption" />
 		<instruction type="file" />
+	</instructions>
+
+	<instructions type="update" fromversion="1.0.1">
+		<instruction type="file" />
+		<instruction type="userOption" />
+		<instruction type="eventListener" />
 	</instructions>
 </package>

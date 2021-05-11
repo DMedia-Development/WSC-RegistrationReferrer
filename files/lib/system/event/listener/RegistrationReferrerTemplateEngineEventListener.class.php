@@ -1,15 +1,39 @@
 <?php
+
 namespace wcf\system\event\listener;
+
 use wcf\system\WCF;
 
-class RegistrationReferrerTemplateEngineEventListener implements IParameterizedEventListener {
+/**
+ * Parses the registration referrer url if transmitted by the browser
+ *
+ * @author Moritz Dahlke (DMedia)
+ * @copyright 2021 DMedia
+ * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @package WoltLabSuite\Core\System\Event\Listener
+ */
+class RegistrationReferrerTemplateEngineEventListener implements IParameterizedEventListener
+{
+
+    /**
+     * session variable name for the registration referrer
+     * @var string
+     */
     protected $session_variable = "original_http_referrer";
 
-    public function execute($eventObj, $className, $eventName, array &$parameters) {
+    /**
+     * @inheritDoc
+     */
+    public function execute($eventObj, $className, $eventName, array &$parameters)
+    {
         $this->$eventName($eventObj);
     }
 
-    protected function beforeDisplay() {
+    /**
+     * @inheritDoc
+     */
+    protected function beforeDisplay()
+    {
 
         /*
         * 'HTTP_REFERER'
@@ -21,6 +45,7 @@ class RegistrationReferrerTemplateEngineEventListener implements IParameterizedE
         if (!WCF::getUser()->userID) {
 
             if (is_null(WCF::getSession()->getVar($this->session_variable))) {
+
                 if (isset($_SERVER["HTTP_REFERER"]) && !empty($_SERVER["HTTP_REFERER"])) {
                     WCF::getSession()->register($this->session_variable, $_SERVER["HTTP_REFERER"]);
                 } else {
@@ -28,6 +53,7 @@ class RegistrationReferrerTemplateEngineEventListener implements IParameterizedE
                     $current_url = $protocol . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
                     WCF::getSession()->register($this->session_variable, $current_url);
                 }
+                
             }
 
         } else {
