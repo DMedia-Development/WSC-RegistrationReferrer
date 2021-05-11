@@ -5,7 +5,7 @@
         <packagedescription><![CDATA[If available, the HTTP referrer will be saved upon registration.]]></packagedescription>
 		<packagename language="de"><![CDATA[Registrierungs Referrer]]></packagename>
         <packagedescription language="de"><![CDATA[Falls vorhanden, wird der Referrer bei der Registrierung gespeichert.]]></packagedescription>	
-		<version>1.0.2</version>
+		<version>1.0.3 pl 1</version>
 		<date>2020-05-11</date>
 	</packageinformation>
 	
