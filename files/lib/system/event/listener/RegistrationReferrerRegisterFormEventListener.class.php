@@ -27,7 +27,7 @@ class RegistrationReferrerRegisterFormEventListener implements IParameterizedEve
             } else {
                 $userEditor = new UserEditor(WCF::getUser());
                 $userEditor->updateUserOptions(array(
-                    User::getUserOptionID("registrationReferrer") => "https://google.com/"
+                    User::getUserOptionID("registrationReferrer") => "Unknown"
                 ));
             }
 
