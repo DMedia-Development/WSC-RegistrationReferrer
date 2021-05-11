@@ -24,19 +24,15 @@
 	
 	<instructions type="install">
 		<instruction type="language" />
-		<instruction type="userOption" />
-		<instruction type="eventListener" />
 		<instruction type="file" />
+		<instruction type="eventListener" />
+		<instruction type="userOption" />
 	</instructions>
 
-	<instructions type="update" fromversion="1.0.0">
-		<instruction type="userOption" />
+	<instructions type="update" fromversion="1.0.*">
+		<instruction type="language" />
 		<instruction type="file" />
-	</instructions>
-
-	<instructions type="update" fromversion="1.0.1">
-		<instruction type="file" />
-		<instruction type="userOption" />
 		<instruction type="eventListener" />
+		<instruction type="userOption" />
 	</instructions>
 </package>
