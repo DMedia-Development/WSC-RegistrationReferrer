@@ -9,7 +9,7 @@
                 <editable>2</editable>
                 <visible>2</visible>
                 <searchable>0</searchable>
-                <defaultvalue>/</defaultvalue>
+                <defaultvalue><![CDATA[Unknown]]></defaultvalue>
                 <outputclass>wcf\system\option\user\RegistrationReferrerUserOptionOutput</outputclass>
             </option>
         </options>

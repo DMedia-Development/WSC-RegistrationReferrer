@@ -4,6 +4,7 @@
     <category name="wcf.user.option">
         <item name="wcf.user.option.registrationReferrer"><![CDATA[Referrer or first page visited]]></item>
         <item name="wcf.user.option.registrationReferrer.description"><![CDATA[<b>This information cannot be trusted!</b><br />This field is filled in automatically if information about the referrer URL is available during registration.]]></item>
+        <item name="wcf.user.option.registrationReferrer_default"><![CDATA[Unknown]]></item>
     </category>
 
 </language>

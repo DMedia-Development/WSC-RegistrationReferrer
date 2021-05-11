@@ -3,6 +3,7 @@
 namespace wcf\system\event\listener;
 
 use wcf\system\WCF;
+use wcf\system\language\LanguageFactory;
 use wcf\data\user\User;
 use wcf\data\user\UserEditor;
 
@@ -47,9 +48,12 @@ class RegistrationReferrerRegisterFormEventListener implements IParameterizedEve
                 WCF::getSession()->unregister($this->session_variable);
 
             } else {
+                $language = LanguageFactory::getInstance()->getDefaultLanguage();
+                $defaultValue = $language->get("wcf.user.option.registrationReferrer_default");
+
                 $userEditor = new UserEditor(WCF::getUser());
                 $userEditor->updateUserOptions(array(
-                    User::getUserOptionID("registrationReferrer") => "/"
+                    User::getUserOptionID("registrationReferrer") => $defaultValue
                 ));
             }
 
