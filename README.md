@@ -1,2 +1,5 @@
-# WSC-RegistrationReferrer
-[WSC Plugin] If available, the HTTP referrer will be saved upon registration.
+# <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/de.png" alt="German Flag" height="24"> Registrierungs Referrer
+Dieses Plugin für die [WoltLab Suite](https://woltlab.com) speichert den sog. Referrer von neu registrierten Benutzern in einem Profilfeld, welches nur von Administratoren gesehen und bearbeitet werden kann. Der Referrer enthält die URL der Website, auf welcher der Benutzer auf die aktuelle Website gestoßen ist. In modernen Browsern wird diese Information nicht mehr übergeben oder wird sogar manipuliert, weshalb man ihr nicht mehr so ganz vertrauen darf. Manchmal sind die Informationen jedoch korrekt und geben Auskunft über die "Herkunft" eines Benutzers.
+
+# <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/png100px/gb.png" alt="English Flag" height="24"> Registration Referrer
+This plugin for the [WoltLab Suite](https://woltlab.com) saves the so-called referrer of newly registered members in a profile field that only administrators can see and edit. The referrer contains the URL of the website on which the user came across the current website. In modern browsers, this information is no longer transmitted or is even manipulated, which is why it can no longer be completely trusted. However, sometimes the information is correct and provides information about the "origin" of a user. 
