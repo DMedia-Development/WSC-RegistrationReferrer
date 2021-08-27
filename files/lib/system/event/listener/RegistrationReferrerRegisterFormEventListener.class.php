@@ -27,26 +27,25 @@ class RegistrationReferrerRegisterFormEventListener implements IParameterizedEve
     /**
      * @inheritDoc
      */
-    public function execute($eventObj, $className, $eventName, array &$parameters) {
+    public function execute($eventObj, $className, $eventName, array &$parameters)
+    {
         $this->$eventName($eventObj);
     }
 
     /**
      * @inheritDoc
      */
-    protected function saved() {
+    protected function saved()
+    {
 
         if (isset(WCF::getSession()->getUser()->userID)) {
-
             if (!is_null(WCF::getSession()->getVar($this->session_variable))) {
-
                 $userEditor = new UserEditor(WCF::getUser());
                 $userEditor->updateUserOptions(array(
                     User::getUserOptionID("registrationReferrer") => WCF::getSession()->getVar($this->session_variable)
                 ));
 
                 WCF::getSession()->unregister($this->session_variable);
-
             } else {
                 $language = LanguageFactory::getInstance()->getDefaultLanguage();
                 $defaultValue = $language->get("wcf.user.option.registrationReferrer_default");
@@ -56,9 +55,6 @@ class RegistrationReferrerRegisterFormEventListener implements IParameterizedEve
                     User::getUserOptionID("registrationReferrer") => $defaultValue
                 ));
             }
-
         }
-
     }
-
 }
